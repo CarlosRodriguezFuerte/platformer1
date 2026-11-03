@@ -28,7 +28,7 @@ const TUNING = {
   GRAVITY: 1800,
 
   // The fastest you can fall.                      try 400 to 1500
-  MAX_FALL_SPEED: 1500,
+  MAX_FALL_SPEED: 400,
 
   // Top running speed.                             try 120 to 400
   MOVE_SPEED: 260,
