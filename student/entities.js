@@ -81,9 +81,20 @@ const ENEMY_TYPES = {
     turnsAtLedges: true,
     hopPower: 460,
     hopEvery: 1.4,
+    
   },
 
-  // <-- paste your new enemy here
+  sentry:{
+    movement: "chase",
+    speed: 50,
+    width: 22,
+    height: 26,
+    color: "yellow",
+    stompable: false,
+    points: 0,
+    turnsAtLedges: true,
+    sightRange: 160,
+  },
 
 };
 
@@ -144,7 +155,14 @@ const PICKUP_TYPES = {
     power: { jump: 1.35, seconds: 8 },
   },
 
-  // <-- paste your new pickup here
+  heart: {
+    color: "#FFA500",
+    size: 13,
+    shape: "square",
+    points: 0,
+    treasure: false,
+    power: {life: 1},
+  }
 
 };
 
@@ -169,10 +187,10 @@ const LEGEND = {
   "*": { kind: "pickup", name: "gem" },
   "b": { kind: "pickup", name: "boots" },
   "f": { kind: "pickup", name: "feather" },
+  "h": { kind: "pickup", name:  "heart"},
 
   "E": { kind: "enemy",  name: "walker" },
   "F": { kind: "enemy",  name: "flyer" },
   "H": { kind: "enemy",  name: "hopper" },
-
-  // <-- add your new letters here
+  "S": { kind: "enemy",  name: "sentry"},
 };
