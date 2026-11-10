@@ -170,7 +170,6 @@ const LEVELS = [
 ##############################
 `,
   },
-
     {
     name: "Challenge 4: Low Ceiling",
     map: `
